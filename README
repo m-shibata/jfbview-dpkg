@@ -1,0 +1,54 @@
+JFBView
+=====
+
+JFBView is a PDF and image viewer for the Linux framebuffer. It is very fast and
+has a number of advanced and unique features including:
+
+  * Arbitrary zoom (10% - 1000%) and rotation;
+  * Table of Contents (TOC) viewer for PDF documents;
+  * Interactive text search for PDF documents;
+  * Multi-threaded rendering;
+  * Asynchronous background pre-caching;
+  * Customizable multi-threaded caching.
+
+The home page of JFBView is at http://seasonofcode.com/pages/jfbview.html.
+
+Please refer to the home page for more information, including installation
+instructions and usage.
+
+BUILDING
+--------
+
+JFBView depends on MuPDF 1.x for PDF rendering and Imlib2 for image rendering.
+Note that the 1.x MuPDF API is incompatible with the pre-1.0 MuPDF API, wich
+means you cannot build JFBView against a pre-1.0 MuPDF library.
+
+JFBView makes use of C++14 features where available, so you will need a
+compatible C++ compiler (GCC 4.9+, Clang 3.5+) to build it.
+
+To build JFBView, just run `make`.
+
+It is also possible to build a variant of JFBView without support for images and
+without dependency on Imlib2, which has a rather large list of dependencies
+itself. This target is called JFBPDF. To build, run `make jfbpdf`.
+
+KEYS AND OPTIONS
+----------------
+
+The key bindings and command line options available are described in the man
+page of JFBView. To view it, do `man jfbview`, or check out the
+[online version](http://seasonofcode.com/assets/files/jfbview.html).
+
+ABOUT
+-----
+
+JFBView is written by Chuan Ji \<ji AT chu4n DOT com>, and is distributed
+under the Apache License v2.
+
+HISTORY
+-------
+
+JFBView started as a fork of FBPDF by Ali Gholami Rudi with improvements and bug
+fixes, and was named JFBPDF. The JFBPDF code (in C) grew steadily more
+convoluted as features were added, and finally was completely rewritten from
+scratch in November 2012, with added support for images through Imlib2.
