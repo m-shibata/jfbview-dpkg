@@ -1,0 +1,2 @@
+version=4
+opts="filenamemangle=s%(?:.*?)?v?(\d[\d.]*)\.tar\.gz%jfbview-.tar.gz%"    https://github.com/jichu4n/JFBView/tags    (?:.*?/)?v?(\d[\d.]*)\.tar\.gz debian uupdate

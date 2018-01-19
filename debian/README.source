@@ -1,0 +1,7 @@
+jfbview for Debian
+-----------------
+
+Don't link to libmujs.
+
+ -- Mitsuya Shibata <mty.shibata@gmail.com>  Fri, 19 Jan 2018 22:58:28 +0900
+

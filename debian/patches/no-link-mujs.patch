@@ -1,0 +1,15 @@
+Description: Remove unused link
+Author: Mitsuya Shibata <mty.shibata@gmail.com>
+Index: jfbview-0.5.4/Makefile
+===================================================================
+--- jfbview-0.5.4.orig/Makefile
++++ jfbview-0.5.4/Makefile
+@@ -53,7 +53,7 @@ ifeq ($(shell [ $(MUPDF_VERSION) -ge 100
+       -lcrypto
+ else
+ ifeq ($(shell [ $(MUPDF_VERSION) -ge 10004 ]; echo $$?), 0)
+-  LIBS += -lmujs \
++  LIBS +=  \
+       -lssl \
+       -lcrypto
+ else

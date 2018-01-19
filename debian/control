@@ -1,0 +1,31 @@
+Source: jfbview
+Section: utils
+Priority: optional
+Maintainer: Mitsuya Shibata <mty.shibata@gmail.com>
+Build-Depends: debhelper (>= 9),
+    libmupdf-dev,
+    libncurses5-dev,
+    libimlib2-dev,
+    libopenjp2-7-dev,
+    libjbig2dec0-dev,
+    libssl-dev,
+    libharfbuzz-dev
+Standards-Version: 3.9.8
+Homepage: https://github.com/jichu4n/JFBView
+Vcs-Git: https://github.com/m-shibata/jfbview-dpkg.git
+Vcs-Browser: https://github.com/m-shibata/jfbview-dpkg
+
+Package: jfbview
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: PDF and image viewer for the Linux framebuffer
+ JFBView is a PDF and image viewer for the Linux framebuffer. It is very fast
+ and has a number of advanced and unique features including:
+ .
+ Features include:
+   * Arbitrary zoom (10% - 1000%) and rotation;
+   * Table of Contents (TOC) viewer for PDF documents;
+   * Interactive text search for PDF documents;
+   * Multi-threaded rendering;
+   * Asynchronous background pre-caching;
+   * Customizable multi-threaded caching.
